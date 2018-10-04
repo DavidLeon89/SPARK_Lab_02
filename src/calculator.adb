@@ -12,7 +12,7 @@ package body Calculator with SPARK_Mode => On is
       Second_Operand : Integer;
       Result         : out Integer) is
    begin
-      Result := (First_Operand - Second_Operand);
+      Result := Add(First_Operand, -Second_Operand);
    end Subtract;
 
 end Calculator;

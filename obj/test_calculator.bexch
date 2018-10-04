@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__test_calculator.o
+[PROJECT FILES]
+C:\Users\Arkhen\Documents\GitHub\SPARK_Lab_02c\SPARK_Lab_02\default.gpr
+20180927122232
+[BOUND OBJECT FILES]
+C:\Users\Arkhen\Documents\GitHub\SPARK_Lab_02c\SPARK_Lab_02\obj\calculator.o
+C:\Users\Arkhen\Documents\GitHub\SPARK_Lab_02c\SPARK_Lab_02\obj\test_assertions.o
+C:\Users\Arkhen\Documents\GitHub\SPARK_Lab_02c\SPARK_Lab_02\obj\test_calculator.o
+[GENERATED SOURCE FILES]
+b__test_calculator.ads
+b__test_calculator.adb
+b__test_calculator.ali
+[RESULTING OPTIONS]
+-LC:\Users\Arkhen\Documents\GitHub\SPARK_Lab_02c\SPARK_Lab_02\obj\
+-LC:\Users\Arkhen\Documents\GitHub\SPARK_Lab_02c\SPARK_Lab_02\obj\
+-LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

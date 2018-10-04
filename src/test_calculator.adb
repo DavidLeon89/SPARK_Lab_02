@@ -19,11 +19,19 @@ procedure Test_Calculator is
    end Test_1;
 
    procedure Test_2 is
-      Msg    : constant String := "Test_2: Subtract positive numbers";
+      Msg    : constant String := "Test_2: Subtract numbers";
       Result : Integer;
    begin
       Subtract (3, 4, Result);
       Assert_True (Result = -1, Msg);
+      Subtract (4, 3, Result);
+      Assert_True (Result = 1, Msg);
+      Subtract (-3, -4, Result);
+      Assert_True (Result = 1, Msg);
+      Subtract (-3, 4, Result);
+      Assert_True (Result = -7, Msg);
+      Subtract (1, -4, Result);
+      Assert_True (Result = 5, Msg);
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");
