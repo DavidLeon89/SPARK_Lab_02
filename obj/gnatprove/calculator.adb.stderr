@@ -1,0 +1,1 @@
+calculator.adb:15:32: medium: overflow check might fail (e.g. when First_Operand = 0 and Second_Operand = -2147483648)[#0]

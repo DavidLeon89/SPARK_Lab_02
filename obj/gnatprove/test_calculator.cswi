@@ -1,0 +1,12 @@
+20181004105322
+-c
+-x
+ada
+-gnatA
+-g
+-gnato
+-fstack-check
+-gnata
+-gnat12
+-gnatc
+-gnates=C:\Users\Arkhen\Documents\GitHub\SPARK_Lab_02c\SPARK_Lab_02\obj\gnatprove\5885a114.tmp

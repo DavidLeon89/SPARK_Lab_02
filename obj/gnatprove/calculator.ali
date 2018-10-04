@@ -1,0 +1,46 @@
+V "GNAT Lib v2018"
+A -x
+A ada
+A -gnatA
+A -g
+A -gnato
+A -fstack-check
+A -gnata
+A -gnat12
+A -gnatc
+P GP FX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U calculator%b		calculator.adb		4660c7e1 OO PK
+
+U calculator%s		calculator.ads		4e54710d OO PK
+
+D calculator.ads	20181004111252 4e54710d calculator%s
+D calculator.adb	20180927122504 0834b6ec calculator%b
+D system.ads		20180524051738 32a08138 system%s
+X 1 calculator.ads
+1K9*Calculator 73l5 73e15 2|1b14 18l5 18t15
+3V13*Add{integer} 4>7 5>7 19r23 21r24 28r23 30r24 37r19 42r19 2|3b13 8l8
+. 8t11
+4i7 First_Operand{integer} 8r12 9r11 12r12 13r45 17r16 17r62 18r23 19r37
+. 26r17 27r19 28r37 36r20 37r33 41r23 42r33 2|4b7 7r15
+5i7 Second_Operand{integer} 8r34 9r45 12r34 13r11 17r38 18r40 21r38 26r40
+. 26r64 27r39 30r38 36r43 41r45 2|5b7 7r31
+54U14*Subtract 55>7 56>7 57<7 2|10b14 16l8 16t16
+55i7 First_Operand{integer} 61r13 62r11 65r12 66r45 2|11b7 15r18
+56i7 Second_Operand{integer} 61r35 62r44 65r34 66r11 2|12b7 15r34
+57i7 Result{integer} 2|13b7 15m7
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS calculator__add 0
+GG EK_GLOBALS calculator__add local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS calculator__subtract 0
+GG EK_GLOBALS calculator__subtract local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS calculator 0
+GG EK_GLOBALS calculator local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER
