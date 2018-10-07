@@ -24,14 +24,7 @@ procedure Test_Calculator is
    begin
       Subtract (3, 4, Result);
       Assert_True (Result = -1, Msg);
-      Subtract (4, 3, Result);
-      Assert_True (Result = 1, Msg);
-      Subtract (-3, -4, Result);
-      Assert_True (Result = 1, Msg);
-      Subtract (-3, 4, Result);
-      Assert_True (Result = -7, Msg);
-      Subtract (1, -4, Result);
-      Assert_True (Result = 5, Msg);
+
    exception
       when Assertion_Error =>
          Put_Line (Msg & " Failed (assertion)");
@@ -39,8 +32,51 @@ procedure Test_Calculator is
          Put_Line (Msg & " Failed (exception)");
    end Test_2;
 
+   procedure Test_3 is
+      Msg    : constant String := "Test_3: Subtract numbers";
+      Result : Integer;
+   begin
+      Subtract (-3, -4, Result);
+      Assert_True (Result = 1, Msg);
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end;
+
+   procedure Test_4 is
+      Msg    : constant String := "Test_4: Subtract numbers";
+      Result : Integer;
+   begin
+      Subtract (-3, 4, Result);
+      Assert_True (Result = -7, Msg);
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+   end;
+
+   procedure Test_5 is
+      Msg    : constant String := "Test_5: Subtract numbers";
+      Result : Integer;
+   begin
+      Subtract (1, -4, Result);
+      Assert_True (Result = 5, Msg);
+   exception
+      when Assertion_Error =>
+         Put_Line (Msg & " Failed (assertion)");
+      when others =>
+         Put_Line (Msg & " Failed (exception)");
+         raise;
+   end;
+
 begin
    Put_Line ("********************* Test_Calculator");
    Test_1;
    Test_2;
+   Test_3;
+   Test_4;
+   Test_5;
 end Test_Calculator;

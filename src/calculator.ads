@@ -59,8 +59,8 @@ package Calculator with SPARK_Mode => On is
      with Pre  => 
        
         (if First_Operand > 0 and Second_Operand < 0 then
-          First_Operand   > Integer'Last + Second_Operand
-       )
+           First_Operand <= Integer'Last + Second_Operand 
+        )
        and
        (if First_Operand < 0 and Second_Operand > 0 then
           Second_Operand >= Integer'First - First_Operand

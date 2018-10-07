@@ -14,14 +14,14 @@ RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U calculator%b		calculator.adb		2fb7d9c2 NE OO PK
+U calculator%b		calculator.adb		9ae51491 NE OO PK
 Z system.assertions%s	s-assert.adb		s-assert.ali
 
-U calculator%s		calculator.ads		4e54710d EE NE OO PK
+U calculator%s		calculator.ads		fb06bc5e EE NE OO PK
 
 D ada.ads		20180524051736 76789da1 ada%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
-D calculator.ads	20181004112654 4e54710d calculator%s
+D calculator.ads	20181005100158 fb06bc5e calculator%s
 D calculator.adb	20181004171216 61e3a8cf calculator%b
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
@@ -36,7 +36,7 @@ X 3 calculator.ads
 5i7 Second_Operand{integer} 8r34 9r45 12r34 13r11 17r38 18r40 21r38 26r40
 . 26r64 27r39 30r38 36r43 41r45 4|5b7 7r31
 54U14*Subtract 55>7 56>7 57<7 4|10b14 16l8 16t16
-55i7 First_Operand{integer} 61r13 62r11 65r12 66r45 4|11b7 15r21
+55i7 First_Operand{integer} 61r13 62r12 65r12 66r45 4|11b7 15r21
 56i7 Second_Operand{integer} 61r35 62r44 65r34 66r11 4|12b7 15r37
 57i7 Result{integer} 4|13b7 15m7
 

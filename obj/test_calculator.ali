@@ -12,12 +12,13 @@ P ZX
 
 RN
 RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
 RV NO_EXCEPTIONS
 RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U test_calculator%b	test_calculator.adb	7b1fdfac NE OO SU
+U test_calculator%b	test_calculator.adb	8b57a66f NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W calculator%s		calculator.adb		calculator.ali
@@ -30,7 +31,7 @@ D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
 D a-tags.ads		20180524051738 491b781d ada.tags%s
 D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
-D calculator.ads	20181004112654 4e54710d calculator%s
+D calculator.ads	20181005100158 fb06bc5e calculator%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
 D system.ads		20180524051738 32a08138 system%s
@@ -47,26 +48,35 @@ D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
 D test_assertions.ads	20180927122232 c1dd7c95 test_assertions%s
-D test_calculator.adb	20181004173032 7c8b616e test_calculator%b
+D test_calculator.adb	20181005095406 3991d5fe test_calculator%b
 X 1 ada.ads
 16K9*Ada 20e8 25|4r6 4r28
 X 6 a-textio.ads
 49K13*Text_IO 471e16 25|4w10 4r32
-263U14*Put_Line 25|16s10 18s10 37s10 39s10 43s4
+263U14*Put_Line 25|16s10 18s10 30s10 32s10 43s10 45s10 56s10 58s10 69s10
+. 71s10 76s4
 X 8 calculator.ads
 1K9*Calculator 78e15 25|6w6 6r28
 3V13*Add{integer} 25|13s20
-54U14*Subtract 25|25s7 27s7 29s7 31s7 33s7
+54U14*Subtract 25|25s7 39s7 52s7 65s7
 X 24 test_assertions.ads
 3K9*Test_Assertions 18e20 25|5w6 5r28
-4X4*Assertion_Error 25|15r12 36r12
-12U14*Assert_True 25|13s7 26s7 28s7 30s7 32s7 34s7
+4X4*Assertion_Error 25|15r12 29r12 42r12 55r12 68r12
+12U14*Assert_True 25|13s7 26s7 40s7 53s7 66s7
 X 25 test_calculator.adb
-8U11*Test_Calculator 8b11 46l5 46t20
-10U14 Test_1 10b14 19l8 19t14 44s4
+8U11*Test_Calculator 8b11 82l5 82t20
+10U14 Test_1 10b14 19l8 19t14 77s4
 11a7 Msg{string} 13r36 16r20 18r20
-21U14 Test_2 21b14 40l8 40t14 45s4
-22a7 Msg{string} 26r33 28r32 30r32 32r33 34r32 37r20 39r20
-23i7 Result{integer} 25m23 26r20 27m23 28r20 29m25 30r20 31m24 32r20 33m24
-. 34r20
+21U14 Test_2 21b14 33l8 33t14 78s4
+22a7 Msg{string} 26r33 30r20 32r20
+23i7 Result{integer} 25m23 26r20
+35U14 Test_3 35b14 46t7 79s4
+36a7 Msg{string} 40r32 43r20 45r20
+37i7 Result{integer} 39m25 40r20
+48U14 Test_4 48b14 59t7 80s4
+49a7 Msg{string} 53r33 56r20 58r20
+50i7 Result{integer} 52m24 53r20
+61U14 Test_5 61b14 73t7 81s4
+62a7 Msg{string} 66r32 69r20 71r20
+63i7 Result{integer} 65m24 66r20
 
