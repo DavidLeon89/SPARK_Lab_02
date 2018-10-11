@@ -36,8 +36,7 @@ package Calculator with SPARK_Mode => On is
        and
        (if First_Operand >= 0 and Second_Operand < 0 then
            First_Operand <= Integer'Last + Second_Operand 
-       )
-         , 
+        ), 
            
          Post => 
            Result = First_Operand - Second_Operand
