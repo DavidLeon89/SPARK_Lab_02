@@ -16,27 +16,27 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U calculator%b		calculator.adb		0ffeed9c OO PK
+U calculator%b		calculator.adb		cdd75894 OO PK
 
-U calculator%s		calculator.ads		1db2f331 OO PK
+U calculator%s		calculator.ads		ac34f05b OO PK
 
-D calculator.ads	20181011100438 1db2f331 calculator%s
-D calculator.adb	20181011090818 124c1ead calculator%b
+D calculator.ads	20181011110014 ac34f05b calculator%s
+D calculator.adb	20181011110320 61e3a8cf calculator%b
 D system.ads		20180524051738 32a08138 system%s
 X 1 calculator.ads
 1K9*Calculator 53l5 53e15 2|1b14 19l5 19t15
-3V13*Add{integer} 4>7 5>7 17r12 2|3b13 8l8 8t11
+3V13*Add{integer} 4>7 5>7 17r12 2|3b13 8l8 8t11 15s17
 4i7 First_Operand{integer} 8r12 9r11 12r12 13r45 17r25 2|4b7 7r15
 5i7 Second_Operand{integer} 8r34 9r45 12r34 13r11 17r41 2|5b7 7r31
 27U14*Subtract 28>7 29>7 30<7 2|10b14 17l8 17t16
-28i7 First_Operand{integer} 34r13 35r12 38r12 39r11 43r21 2|11b7 16r17
-29i7 Second_Operand{integer} 34r36 35r44 38r34 39r44 43r37 2|12b7 16r33
-30i7 Result{integer} 43r12 2|13b7 16m7
+28i7 First_Operand{integer} 33r12 34r11 37r12 38r12 43r21 2|11b7 15r21
+29i7 Second_Operand{integer} 33r34 34r44 37r35 38r44 43r37 2|12b7 15r37
+30i7 Result{integer} 43r12 2|13b7 15m7
 
 QQ SPARKVERSION 2018 (20180523)
 GG EK_DIRECT_CALLS calculator__add 0
 GG EK_GLOBALS calculator__add local FALSE E_FUNCTION FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
-GG EK_DIRECT_CALLS calculator__subtract 0
+GG EK_DIRECT_CALLS calculator__subtract 1 calculator__add
 GG EK_GLOBALS calculator__subtract local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
 GG EK_DIRECT_CALLS calculator 0
 GG EK_GLOBALS calculator local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0

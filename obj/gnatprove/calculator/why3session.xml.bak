@@ -108,21 +108,21 @@
  <transf name="split_goal_wp_conj" proved="true" >
   <goal name="WP_parameter def.0" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="5"/></proof>
-  <proof prover="1" obsolete="true"><result status="unknown" steps="14"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="22"/></proof>
   </goal>
   <goal name="WP_parameter def.1" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="5"/></proof>
-  <proof prover="1" obsolete="true"><result status="unknown" steps="22"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="14"/></proof>
   </goal>
   <goal name="WP_parameter def.2" expl="precondition" proved="true">
   <proof prover="0"><result status="valid" steps="24"/></proof>
-  <proof prover="1" obsolete="true"><result status="unknown" steps="19"/></proof>
+  <proof prover="1" obsolete="true"><result status="unknown" steps="27"/></proof>
   <transf name="split_disj" >
    <goal name="WP_parameter def.2.0" expl="precondition">
-   <proof prover="1" obsolete="true"><result status="unknown" steps="19"/></proof>
+   <proof prover="1" obsolete="true"><result status="failure"/></proof>
    </goal>
    <goal name="WP_parameter def.2.0">
-   <proof prover="1"><result status="failure"/></proof>
+   <proof prover="1"><result status="unknown" steps="27"/></proof>
    </goal>
   </transf>
   </goal>
@@ -134,10 +134,10 @@
   <proof prover="1" obsolete="true"><result status="unknown" steps="18"/></proof>
   </goal>
   <goal name="WP_parameter def.4">
-  <proof prover="0"><result status="unknown" steps="14"/></proof>
+  <proof prover="0"><result status="valid" steps="5"/></proof>
   <proof prover="1"><result status="unknown" steps="14"/></proof>
   </goal>
-  <goal name="WP_parameter def.4">
+  <goal name="WP_parameter def.3">
   <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
  </transf>
