@@ -25,7 +25,7 @@
       "sloc": [
         {
           "file": "calculator.ads",
-          "line": 54
+          "line": 27
         }
       ],
       "spark": "all"
@@ -34,7 +34,7 @@
   "flow": [
     {
       "file": "calculator.ads",
-      "line": 57,
+      "line": 30,
       "col": 7,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -43,60 +43,40 @@
         "sloc": [
           {
             "file": "calculator.ads",
-            "line": 54
+            "line": 27
           }
         ]
       },
       "check_tree": {
       },
-      "tracefile": "calculator__flow__28.trace",
+      "tracefile": "calculator__flow__44.trace",
       "how_proved": "flow"
-    }
-  ],
-  "proof": [
+    },
     {
       "file": "calculator.ads",
-      "line": 66,
-      "col": 43,
-      "rule": "VC_OVERFLOW_CHECK",
+      "line": 43,
+      "col": 19,
+      "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
         "name": "Calculator.Subtract",
         "sloc": [
           {
             "file": "calculator.ads",
-            "line": 54
+            "line": 27
           }
         ]
       },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 5,
-              "time": 2.00000000000000E-02
-            }
-          },
-          "transformations": {
-          }
-        }
-      ],
-      "check_file": "calculator.ads",
-      "check_line": 66,
-      "check_col": 43,
-      "how_proved": "prover",
-      "stats": {
-        "CVC4": {
-          "count": 1,
-          "max_steps": 1,
-          "max_time": 1.99999995529652E-02
-        }
-      }
-    },
+      "check_tree": {
+      },
+      "tracefile": "calculator__flow__45.trace",
+      "how_proved": "flow"
+    }
+  ],
+  "proof": [
     {
       "file": "calculator.ads",
-      "line": 62,
+      "line": 39,
       "col": 42,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
@@ -105,7 +85,7 @@
         "sloc": [
           {
             "file": "calculator.ads",
-            "line": 54
+            "line": 27
           }
         ]
       },
@@ -123,7 +103,7 @@
         }
       ],
       "check_file": "calculator.ads",
-      "check_line": 62,
+      "check_line": 39,
       "check_col": 42,
       "how_proved": "prover",
       "stats": {
@@ -136,16 +116,16 @@
     },
     {
       "file": "calculator.ads",
-      "line": 69,
-      "col": 16,
-      "rule": "VC_POSTCONDITION",
+      "line": 35,
+      "col": 42,
+      "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
         "name": "Calculator.Subtract",
         "sloc": [
           {
             "file": "calculator.ads",
-            "line": 54
+            "line": 27
           }
         ]
       },
@@ -163,8 +143,48 @@
         }
       ],
       "check_file": "calculator.ads",
-      "check_line": 69,
-      "check_col": 16,
+      "check_line": 35,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "calculator.ads",
+      "line": 43,
+      "col": 12,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "Calculator.Subtract",
+        "sloc": [
+          {
+            "file": "calculator.ads",
+            "line": 27
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "calculator.ads",
+      "check_line": 43,
+      "check_col": 12,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -215,107 +235,17 @@
       }
     },
     {
-      "file": "calculator.adb",
-      "line": 15,
-      "col": 32,
+      "file": "calculator.ads",
+      "line": 43,
+      "col": 35,
       "rule": "VC_OVERFLOW_CHECK",
-      "severity": "medium",
+      "severity": "info",
       "entity": {
         "name": "Calculator.Subtract",
         "sloc": [
           {
             "file": "calculator.ads",
-            "line": 54
-          }
-        ]
-      },
-      "check_tree": [
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Unknown (other)",
-              "steps": 22,
-              "time": 0
-            },
-            "CVC4_CE": {
-              "result": "Unknown (other)",
-              "steps": 22,
-              "time": 0
-            }
-          },
-          "transformations": {
-            "split_disj": [
-              {
-                "proof_attempts": {
-                  "CVC4_CE": {
-                    "result": "Unknown (other)",
-                    "steps": 22,
-                    "time": 0
-                  }
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              }
-            ]
-          }
-        }
-      ],
-      "check_file": "calculator.adb",
-      "check_line": 15,
-      "check_col": 32,
-      "cntexmp": {
-        "calculator.adb": {
-          "15": [
-            {
-              "name": "First_Operand",
-              "value": "0",
-              "kind": "variable"
-            },
-            {
-              "name": "Second_Operand",
-              "value": "-2147483648",
-              "kind": "variable"
-            }
-          ]
-        },
-        "calculator.ads": {
-          "55": [
-            {
-              "name": "First_Operand",
-              "value": "0",
-              "kind": "variable"
-            }
-          ],
-          "56": [
-            {
-              "name": "Second_Operand",
-              "value": "-2147483648",
-              "kind": "variable"
-            }
-          ]
-        }
-      },
-      "msg_id": 0,
-      "how_proved": "prover"
-    },
-    {
-      "file": "calculator.ads",
-      "line": 9,
-      "col": 43,
-      "rule": "VC_OVERFLOW_CHECK",
-      "severity": "info",
-      "entity": {
-        "name": "Calculator.Add",
-        "sloc": [
-          {
-            "file": "calculator.ads",
-            "line": 3
+            "line": 27
           }
         ]
       },
@@ -333,8 +263,8 @@
         }
       ],
       "check_file": "calculator.ads",
-      "check_line": 9,
-      "check_col": 43,
+      "check_line": 43,
+      "check_col": 35,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -423,62 +353,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 13,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 13,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 13,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 13,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 13,
-              "time": 0
-            }
-          },
-          "transformations": {
-          }
-        },
-        {
-          "proof_attempts": {
-            "CVC4": {
-              "result": "Valid",
-              "steps": 13,
+              "steps": 5,
               "time": 0
             }
           },
@@ -492,24 +367,24 @@
       "how_proved": "prover",
       "stats": {
         "CVC4": {
-          "count": 6,
+          "count": 1,
           "max_steps": 1,
           "max_time": 0.00000000000000E+00
         }
       }
     },
     {
-      "file": "calculator.ads",
-      "line": 18,
-      "col": 19,
+      "file": "calculator.adb",
+      "line": 16,
+      "col": 31,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
-        "name": "Calculator.Add",
+        "name": "Calculator.Subtract",
         "sloc": [
           {
             "file": "calculator.ads",
-            "line": 3
+            "line": 27
           }
         ]
       },
@@ -518,7 +393,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 8,
+              "steps": 24,
               "time": 0
             }
           },
@@ -532,66 +407,11 @@
               },
               {
                 "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
-                },
-                "transformations": {
-                }
-              },
-              {
-                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Failure",
+                    "steps": -1,
+                    "time": 0
+                  }
                 },
                 "transformations": {
                 }
@@ -600,9 +420,9 @@
           }
         }
       ],
-      "check_file": "calculator.ads",
-      "check_line": 18,
-      "check_col": 19,
+      "check_file": "calculator.adb",
+      "check_line": 16,
+      "check_col": 31,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -614,8 +434,8 @@
     },
     {
       "file": "calculator.ads",
-      "line": 27,
-      "col": 35,
+      "line": 17,
+      "col": 39,
       "rule": "VC_OVERFLOW_CHECK",
       "severity": "info",
       "entity": {
@@ -632,7 +452,7 @@
           "proof_attempts": {
             "CVC4": {
               "result": "Valid",
-              "steps": 8,
+              "steps": 5,
               "time": 0
             }
           },
@@ -646,6 +466,11 @@
               },
               {
                 "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Unknown (none)",
+                    "steps": 19,
+                    "time": 0
+                  }
                 },
                 "transformations": {
                 }
@@ -667,8 +492,48 @@
         }
       ],
       "check_file": "calculator.ads",
-      "check_line": 27,
-      "check_col": 35,
+      "check_line": 17,
+      "check_col": 39,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "calculator.ads",
+      "line": 9,
+      "col": 43,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Calculator.Add",
+        "sloc": [
+          {
+            "file": "calculator.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "calculator.ads",
+      "check_line": 9,
+      "check_col": 43,
       "how_proved": "prover",
       "stats": {
         "CVC4": {
@@ -684,13 +549,45 @@
       "assumptions": [
       ],
       "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "Calculator.Subtract",
+          "sloc": [
+            {
+              "file": "calculator.ads",
+              "line": 27
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
         "predicate": "CLAIM_EFFECTS",
         "arg": {
           "name": "Calculator.Subtract",
           "sloc": [
             {
               "file": "calculator.ads",
-              "line": 54
+              "line": 27
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Calculator.Subtract",
+          "sloc": [
+            {
+              "file": "calculator.ads",
+              "line": 27
             }
           ]
         }
@@ -762,14 +659,14 @@
     }
   ],
   "timings": {
-    "marking": 1.30782005726360E-04,
-    "globals (basic)": 1.69275997905061E-04,
-    "globals/properties (advanced)": 3.55247000698000E-04,
-    "flow analysis": 1.49704504292458E-03,
+    "marking": 1.18725001811981E-04,
+    "globals (basic)": 1.66493002325296E-04,
+    "globals/properties (advanced)": 3.48753994330764E-04,
+    "flow analysis": 1.48916104808450E-03,
     "codepeer results": 3.24600000567443E-06,
-    "init_why_sections": 1.53044005855918E-04,
-    "translation of standard": 2.39165406674147E-03,
-    "translation of compilation unit": 1.35049398522824E-03,
-    "proof": 8.49138438701630E-01
+    "init_why_sections": 1.56754002091475E-04,
+    "translation of standard": 2.81646591611207E-03,
+    "translation of compilation unit": 1.14272604696453E-03,
+    "proof": 4.26885962486267E-01
   }
 }

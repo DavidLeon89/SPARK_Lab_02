@@ -1,26 +1,26 @@
 Summary of SPARK analysis
 =========================
 
-------------------------------------------------------------------------------------------------------
-SPARK Analysis results        Total      Flow   Interval   CodePeer     Provers   Justified   Unproved
-------------------------------------------------------------------------------------------------------
-Data Dependencies                 .         .          .          .           .           .          .
-Flow Dependencies                 .         .          .          .           .           .          .
-Initialization                    1         1          .          .           .           .          .
-Non-Aliasing                      .         .          .          .           .           .          .
-Run-time Checks                   8         .          .          .    7 (CVC4)           .          1
-Assertions                        .         .          .          .           .           .          .
-Functional Contracts              2         .          .          .    2 (CVC4)           .          .
-LSP Verification                  .         .          .          .           .           .          .
-------------------------------------------------------------------------------------------------------
-Total                            11    1 (9%)          .          .     9 (82%)           .     1 (9%)
+-------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total       Flow   Interval   CodePeer     Provers   Justified   Unproved
+-------------------------------------------------------------------------------------------------------
+Data Dependencies                 .          .          .          .           .           .          .
+Flow Dependencies                 .          .          .          .           .           .          .
+Initialization                    2          2          .          .           .           .          .
+Non-Aliasing                      .          .          .          .           .           .          .
+Run-time Checks                   8          .          .          .    8 (CVC4)           .          .
+Assertions                        .          .          .          .           .           .          .
+Functional Contracts              2          .          .          .    2 (CVC4)           .          .
+LSP Verification                  .          .          .          .           .           .          .
+-------------------------------------------------------------------------------------------------------
+Total                            12    2 (17%)          .          .    10 (83%)           .          .
 
 
 Analyzed 3 units
 in unit calculator, 3 subprograms and packages out of 3 analyzed
   Calculator at calculator.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  Calculator.Add at calculator.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (6 checks)
-  Calculator.Subtract at calculator.ads:54 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 3 checks out of 4 proved
+  Calculator.Add at calculator.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
+  Calculator.Subtract at calculator.ads:27 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
 in unit test_assertions, 0 subprograms and packages out of 4 analyzed
   Test_Assertions.Assert_False at test_assertions.ads:9 skipped
   Test_Assertions.Assert_False at test_assertions.ads:15 skipped

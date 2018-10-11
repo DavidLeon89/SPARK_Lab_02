@@ -18,7 +18,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U test_calculator%b	test_calculator.adb	8b57a66f NE OO SU
+U test_calculator%b	test_calculator.adb	762a24cb NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W calculator%s		calculator.adb		calculator.ali
@@ -31,7 +31,7 @@ D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
 D a-tags.ads		20180524051738 491b781d ada.tags%s
 D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
-D calculator.ads	20181005100158 fb06bc5e calculator%s
+D calculator.ads	20181011091424 067b3efa calculator%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
 D system.ads		20180524051738 32a08138 system%s
@@ -56,7 +56,7 @@ X 6 a-textio.ads
 263U14*Put_Line 25|16s10 18s10 30s10 32s10 43s10 45s10 56s10 58s10 69s10
 . 71s10 76s4
 X 8 calculator.ads
-1K9*Calculator 78e15 25|6w6 6r28
+1K9*Calculator 86e15 25|6w6 6r28
 3V13*Add{integer} 25|13s20
 54U14*Subtract 25|25s7 39s7 52s7 65s7
 X 24 test_assertions.ads
